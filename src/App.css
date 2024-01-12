@@ -28,3 +28,7 @@ li {
   color: #fd0303;
   cursor: pointer;
 }
+
+input:checked + span {
+  text-decoration: line-through;
+}
