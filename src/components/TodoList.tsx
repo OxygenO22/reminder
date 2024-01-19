@@ -1,9 +1,9 @@
 import React from 'react';
 import { TodoItem } from './TodoItem';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from '../hooks'; 
 
 export const TodoList = () => {
-  const todos = useSelector(state => state.todos.todos);
+  const todos = useAppSelector((state) => state.todos.list);
   return (
     <ul>
         {
